@@ -138,7 +138,7 @@ namespace MoreLinq
 
             var count = source.TryAsCollectionLike()?.Count ?? source.CountUpTo(limit);
 
-            return count >= min && count <= max;
+            return count > min && count <= max;
         }
 
         /// <summary>
